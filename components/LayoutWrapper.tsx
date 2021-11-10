@@ -7,12 +7,15 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
+import { useRouter } from 'next/router'
 
 interface Props {
   children: ReactNode
 }
 
 const LayoutWrapper = ({ children }: Props) => {
+  const router = useRouter().pathname
+
   return (
     <SectionContainer>
       <div className="flex flex-col justify-between h-screen">
@@ -39,7 +42,9 @@ const LayoutWrapper = ({ children }: Props) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+                  className={`${
+                    link.href == router ? 'text-primary-500 dark:text-primary-500' : ''
+                  } font-medium text-gray-900 sm:p-4 dark:text-gray-100 un-effect `}
                 >
                   {link.title}
                 </Link>
