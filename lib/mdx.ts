@@ -3,7 +3,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
 import readingTime from 'reading-time'
-import { visit } from 'unist-util-visit'
+// import { visit } from 'unist-util-visit'
 import type { Pluggable } from 'unified'
 import getAllFilesRecursively from './utils/files'
 import { PostFrontMatter } from 'types/PostFrontMatter'
@@ -135,6 +135,7 @@ export async function getAllFilesFrontMatter(folder: 'blog') {
     if ('draft' in frontmatter && frontmatter.draft !== true) {
       allFrontMatter.push({
         ...frontmatter,
+        readingTime: Math.round(readingTime(source).minutes),
         slug: formatSlug(fileName),
         date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
       })
