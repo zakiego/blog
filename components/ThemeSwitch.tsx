@@ -31,7 +31,7 @@ const ThemeSwitch = (): JSX.Element => {
       <div className="moon-mask" />
       <style jsx>{`
         .theme-button {
-          opacity: 0.5;
+          opacity: 1;
           position: relative;
           border-radius: 5px;
           width: 42px;
@@ -41,9 +41,7 @@ const ThemeSwitch = (): JSX.Element => {
           justify-content: center;
           transition: opacity 0.3s ease;
         }
-        .theme-button:hover {
-          opacity: 1;
-        }
+
         .moon-or-sun {
           position: relative;
           width: 20px;
