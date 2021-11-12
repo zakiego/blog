@@ -11,4 +11,5 @@ export type PostFrontMatter = {
   slug: string
   fileName: string
   readingTime: number
+  image?: string
 }
