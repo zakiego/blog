@@ -1,12 +1,14 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
+name: Zakiego
+avatar: /static/images/zakiego.jpg
 occupation: Professor of Atmospheric Science
 company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+github: https://github.com/zakiego
+linkedin: https://www.linkedin.com/in/mzakiyuddin
+twitter: https://twitter.com/prasastipagi
+medium: https://mzakiyuddin.medium.com
+spotify: https://open.spotify.com/show/4H3wqTA5e4YGCbcBF4RX7i
+youtube: https://www.youtube.com/channel/UCta8ym2O2mWFsgnzzIC7TUg/
 ---
 
 Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
