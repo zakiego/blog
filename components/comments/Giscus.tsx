@@ -32,6 +32,7 @@ const Giscus = ({ mapping }: Props) => {
     script.setAttribute('data-emit-metadata', siteMetadata.comment.giscusConfig.metadata)
     script.setAttribute('data-theme', commentsTheme)
     script.setAttribute('crossorigin', 'anonymous')
+    script.setAttribute('data-lang', 'id')
     script.async = true
 
     const comments = document.getElementById(COMMENTS_ID)
