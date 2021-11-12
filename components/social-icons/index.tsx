@@ -20,7 +20,7 @@ const components = {
   spotify: Spotify,
 }
 
-const SocialIcon = ({ kind, href, size = 8 }) => {
+const SocialIcon = ({ kind, href }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null
 
@@ -35,7 +35,7 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
     >
       <span className="sr-only">{kind}</span>
       <SocialSvg
-        className={`h-${size} w-${size} fill-current transition-all duration-300 text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 `}
+        className={`h-6 w-6 fill-current transition-all duration-300 text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 `}
       />
     </a>
   )

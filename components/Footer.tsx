@@ -23,12 +23,12 @@ export default function Footer() {
           ''
         ) : (
           <div className="flex space-x-6 scale-75 opacity-75 md:scale-100">
-            <SocialIcon kind="github" href={siteMetadata.github} size={sizeIcon} />
-            <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={sizeIcon} />
-            <SocialIcon kind="twitter" href={siteMetadata.twitter} size={sizeIcon} />
-            <SocialIcon kind="medium" href={siteMetadata.medium} size={sizeIcon} />
-            <SocialIcon kind="spotify" href={siteMetadata.spotify} size={sizeIcon} />
-            <SocialIcon kind="youtube" href={siteMetadata.youtube} size={sizeIcon} />
+            <SocialIcon kind="github" href={siteMetadata.github} />
+            <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
+            <SocialIcon kind="twitter" href={siteMetadata.twitter} />
+            <SocialIcon kind="medium" href={siteMetadata.medium} />
+            <SocialIcon kind="spotify" href={siteMetadata.spotify} />
+            <SocialIcon kind="youtube" href={siteMetadata.youtube} />
           </div>
         )}
       </div>
