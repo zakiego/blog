@@ -11,10 +11,11 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'address@yoursite.com',
   github: 'https://github.com/zakiego',
+  linkedin: 'https://www.linkedin.com/in/mzakiyuddin',
   twitter: 'https://twitter.com/prasastipagi',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  medium: 'https://mzakiyuddin.medium.com',
+  spotify: 'https://open.spotify.com/show/4H3wqTA5e4YGCbcBF4RX7i',
+  youtube: 'https://www.youtube.com/channel/UCta8ym2O2mWFsgnzzIC7TUg/',
   locale: 'id-ID',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
@@ -25,7 +26,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    // provider: 'buttondown',
   },
   comment: {
     // Select a provider and use the environment variables associated to it
