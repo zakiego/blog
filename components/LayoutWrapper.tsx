@@ -8,7 +8,6 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
 import { useRouter } from 'next/router'
-import ShowBreakpoint from '@/layouts/ShowBreakpoint'
 
 interface Props {
   children: ReactNode
@@ -28,7 +27,6 @@ const LayoutWrapper = ({ children }: Props) => {
               </div>
             </Link>
           </div>
-          <ShowBreakpoint />
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
