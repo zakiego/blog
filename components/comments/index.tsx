@@ -46,7 +46,6 @@ const Comments = ({ frontMatter }: Props) => {
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => unobserve(),
   })
-  console.log(inView)
 
   return (
     <div ref={observe}>
