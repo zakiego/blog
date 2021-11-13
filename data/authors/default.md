@@ -1,6 +1,6 @@
 ---
 name: Zakiego
-avatar: /static/images/zakiego.jpg
+avatar: /static/images/avatar.jpg
 occupation: Professor of Atmospheric Science
 company: Stanford University
 github: https://github.com/zakiego
