@@ -71,7 +71,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                           <h2 className="font-bold md:text-2xl">
                             <Link
                               href={`/blog/${slug}`}
-                              className="py-2 text-gray-900 dark:text-gray-100 un-effect"
+                              className="py-1 text-gray-900 dark:text-gray-100 un-effect"
                             >
                               {title}
                             </Link>
