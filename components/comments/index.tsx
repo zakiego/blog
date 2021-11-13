@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import dynamic from 'next/dynamic'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+import useInView from 'react-cool-inview'
 
 interface Props {
   frontMatter: PostFrontMatter
@@ -41,18 +42,24 @@ const Comments = ({ frontMatter }: Props) => {
       term = frontMatter.title
       break
   }
+
+  const { observe, inView } = useInView({
+    onEnter: ({ unobserve }) => unobserve(),
+  })
+  console.log(inView)
+
   return (
-    <>
-      {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && (
+    <div ref={observe}>
+      {inView && siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && (
         <GiscusComponent mapping={term} />
       )}
-      {siteMetadata.comment && siteMetadata.comment.provider === 'utterances' && (
+      {inView && siteMetadata.comment && siteMetadata.comment.provider === 'utterances' && (
         <UtterancesComponent issueTerm={term} />
       )}
-      {siteMetadata.comment && siteMetadata.comment.provider === 'disqus' && (
+      {inView && siteMetadata.comment && siteMetadata.comment.provider === 'disqus' && (
         <DisqusComponent frontMatter={frontMatter} />
       )}
-    </>
+    </div>
   )
 }
 
