@@ -5,8 +5,6 @@ import SocialIcon from '@/components/social-icons'
 export default function Footer() {
   const router = useRouter().pathname
 
-  const sizeIcon = 6
-
   return (
     <footer>
       <div className="flex flex-col items-center mt-16 mb-10">
