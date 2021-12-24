@@ -6,9 +6,7 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import("tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx', './lib/**/*.ts'],
-  darkMode: 'class',
+  content: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx', './lib/**/*.ts'],
   theme: {
     extend: {
       spacing: {
@@ -26,7 +24,7 @@ module.exports = {
       },
       colors: {
         primary: colors.sky,
-        gray: colors.trueGray,
+        gray: colors.neutral,
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -152,9 +150,6 @@ module.exports = {
         },
       }),
     },
-  },
-  variants: {
-    typography: ['dark'],
   },
   plugins: [
     require('@tailwindcss/forms'),
