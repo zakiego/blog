@@ -99,6 +99,7 @@ export const BlogSEO = ({
   date,
   lastmod,
   url,
+  image,
   images = [],
 }: BlogSeoProps) => {
   const router = useRouter()
@@ -164,8 +165,8 @@ export const BlogSEO = ({
         title={title}
         description={summary}
         ogType="article"
-        ogImage={featuredImages}
-        twImage={twImageUrl}
+        ogImage={image || featuredImages}
+        twImage={image || twImageUrl}
       />
       <Head>
         {date && <meta property="article:published_time" content={publishedAt} />}
