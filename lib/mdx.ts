@@ -107,7 +107,7 @@ export async function getFileBySlug<T>(type: 'authors' | 'blog', slug: string | 
     mdxSource: code,
     toc,
     frontMatter: {
-      readingTime: Math.round(readingTime(source).minutes),
+      readingTime: Math.round(readingTime(source).minutes) || 1,
       slug: slug || null,
       fileName: fs.existsSync(mdxPath) ? `${slug}.mdx` : `${slug}.md`,
       ...frontmatter,
@@ -136,7 +136,7 @@ export async function getAllFilesFrontMatter(folder: 'blog') {
     if ('draft' in frontmatter && frontmatter.draft !== true) {
       allFrontMatter.push({
         ...frontmatter,
-        readingTime: Math.round(readingTime(source).minutes),
+        readingTime: Math.round(readingTime(source).minutes) || 1,
         slug: formatSlug(fileName),
         date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
       })
