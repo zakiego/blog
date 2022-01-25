@@ -9,4 +9,6 @@ spotify: https://open.spotify.com/show/4H3wqTA5e4YGCbcBF4RX7i
 youtube: https://www.youtube.com/channel/UCta8ym2O2mWFsgnzzIC7TUg/
 ---
 
-Soon.
+# Halo 👋🏻
+
+Kamu bisa membacanya [di sini](https://zakiego.my.id/about-me).
