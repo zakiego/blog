@@ -110,7 +110,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           </header>
           <div className="pb-8">
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0">
-              <div className="pb-8 prose pt-7 dark:prose-dark max-w-none">{children}</div>
+              <div className="pb-8 prose pt-7 dark:prose-dark max-w-none md:text-xl md:leading-9">
+                {children}
+              </div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 {/* <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
