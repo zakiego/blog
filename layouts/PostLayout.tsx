@@ -113,13 +113,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="pb-8 prose pt-7 dark:prose-dark max-w-none md:text-xl md:leading-9">
                 {children}
               </div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                {/* <Link href={discussUrl(slug)} rel="nofollow">
+              {/* <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
-                {` • `} */}
+                {` • `}
                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-              </div>
+              </div> */}
+              <div />
               {/* <Comments frontMatter={frontMatter} /> */}
             </div>
             <footer>
