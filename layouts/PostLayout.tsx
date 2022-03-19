@@ -10,10 +10,10 @@ import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/post/${fileName}`
 // const discussUrl = (slug) =>
 //   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-//     `${siteMetadata.siteUrl}/blog/${slug}`
+//     `${siteMetadata.siteUrl}/post/${slug}`
 //   )}`
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
@@ -37,7 +37,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   return (
     <SectionContainer>
       <BlogSEO
-        url={`${siteMetadata.siteUrl}/blog/${slug}`}
+        url={`${siteMetadata.siteUrl}/post/${slug}`}
         authorDetails={authorDetails}
         {...frontMatter}
       />
@@ -130,7 +130,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {prev && (
                     <div className="pt-4 xl:pt-8">
                       <Link
-                        href={`/blog/${prev.slug}`}
+                        href={`/post/${prev.slug}`}
                         className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                       >
                         &larr; {prev.title}
@@ -140,7 +140,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {next && (
                     <div className="pt-4 xl:pt-8">
                       <Link
-                        href={`/blog/${next.slug}`}
+                        href={`/post/${next.slug}`}
                         className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                       >
                         {next.title} &rarr;

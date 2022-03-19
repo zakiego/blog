@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Tertulis yang terlintas agar tak terlupakan.',
   language: 'id-ID',
   siteUrl: 'https://blog.zakiego.my.id',
-  siteRepo: 'https://github.com/zakiego/blog',
+  siteRepo: 'https://github.com/zakiego/post',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',

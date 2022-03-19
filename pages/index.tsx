@@ -46,7 +46,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         <div>
                           <h2 className="font-bold md:text-2xl">
                             <Link
-                              href={`/blog/${slug}`}
+                              href={`/post/${slug}`}
                               className="py-1 text-gray-900 dark:text-gray-100 un-effect"
                             >
                               {title}
@@ -90,7 +90,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
-            href="/blog"
+            href="/post"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label="all posts"
           >
