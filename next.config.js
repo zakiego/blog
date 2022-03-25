@@ -6,15 +6,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = withBundleAnalyzer({
-  async redirects() {
-    return [
-      {
-        source: '/blog/:slug',
-        destination: '/post/:slug',
-        permanent: true,
-      },
-    ]
-  },
   reactStrictMode: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   eslint: {
