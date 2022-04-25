@@ -11,4 +11,4 @@ youtube: https://www.youtube.com/channel/UCta8ym2O2mWFsgnzzIC7TUg/
 
 # Halo 👋🏻
 
-Kamu bisa membacanya [di sini](https://zakiego.my.id/about-me).
+Kamu bisa membacanya [di sini](https://zakiego.my.id/about).
