@@ -1,6 +1,6 @@
 const siteMetadata = {
-  title: 'Blog Zakiego',
-  author: 'Zakiego',
+  title: 'Blog M. Zakiyuddin Munziri',
+  author: 'M. Zakiyuddin Munziri',
   headerTitle: 'Zakiego',
   description: 'Tertulis yang terlintas agar tak terlupakan.',
   language: 'id-ID',

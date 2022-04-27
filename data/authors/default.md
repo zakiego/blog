@@ -1,5 +1,5 @@
 ---
-name: Zakiego
+name: M. Zakiyuddin Munziri
 avatar: /static/images/avatar.jpg
 github: https://github.com/zakiego
 linkedin: https://www.linkedin.com/in/mzakiyuddin
