@@ -7,6 +7,7 @@ import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import Image from 'next/image'
+import SectionContainer from '@/components/SectionContainer'
 // import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 10
@@ -22,7 +23,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
     'https://images.unsplash.com/photo-1600775508114-5c30cf911a40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80'
 
   return (
-    <>
+    <SectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-gray-200 md:divide-y dark:divide-gray-700">
         <div className="hidden pt-6 pb-8 space-y-2 md:block md:space-y-5">
@@ -103,6 +104,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           <NewsletterForm />
         </div>
       )} */}
-    </>
+    </SectionContainer>
   )
 }

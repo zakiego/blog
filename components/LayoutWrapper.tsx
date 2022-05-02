@@ -19,15 +19,15 @@ const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
       <div className="flex flex-col justify-between h-screen">
-        <header className="flex items-center justify-between py-4">
-          <div>
+        <header className="flex items-center justify-between py-4 max-w-3xl px-3 sm:px-6 xl:max-w-5xl xl:px-0">
+          <div className="">
             <Link href="/" aria-label="Blog Zakiego">
               <div className="flex items-center justify-between text-2xl font-semibold">
                 {siteMetadata.headerTitle}
               </div>
             </Link>
           </div>
-          <div className="flex items-center text-base leading-5">
+          <div className="flex items-center justify-end text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
                 <Link
