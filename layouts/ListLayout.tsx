@@ -5,6 +5,7 @@ import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import Image from 'next/image'
+import ImageTransition from '@/components/ImageTransition'
 interface Props {
   posts: PostFrontMatter[]
   title: string
@@ -97,12 +98,12 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                   <div className="block w-1/12" />
 
                   <div className="flex-none w-4/12 aspect-w-5 lg:aspect-w-6 aspect-h-1">
-                    <Image
+                    <ImageTransition
                       src={image || imgLink}
                       quality={80}
                       layout="fill"
                       alt="Image"
-                      className="object-cover rounded-md"
+                      // className="object-cover rounded-md"
                     />
                   </div>
                 </article>
