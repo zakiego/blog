@@ -84,8 +84,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           src={author.avatar}
                           width="50px"
                           height="50px"
-                          unoptimized={true}
                           alt="avatar"
+                          quality="80"
                           className="w-10 h-10 rounded-full"
                         />
                       )}
