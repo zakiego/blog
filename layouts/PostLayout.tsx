@@ -49,12 +49,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="pb-5 lg:pt-0">
                 {image && (
                   <div className="shadow-md aspect-w-2 aspect-h-1 md:aspect-w-3 md:aspect-h-1 2xl:aspect-w-16 2xl:aspect-h-5">
-                    <Image
+                    <ImageTransition
                       src={image}
                       quality={80}
                       alt="Image"
                       layout="fill"
-                      className="object-cover rounded-md"
+                      // className="object-cover rounded-md"
                     />
                   </div>
                 )}
@@ -81,13 +81,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {authorDetails.map((author) => (
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
-                        <ImageTransition
+                        <Image
                           src={author.avatar}
                           width="50px"
                           height="50px"
                           alt="avatar"
                           quality="80"
-                          // className="w-10 h-10 rounded-full"
+                          className="w-10 h-10 rounded-full"
                         />
                       )}
                       <dl className="text-sm font-medium leading-5 whitespace-nowrap">
