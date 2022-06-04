@@ -9,6 +9,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import ImageTransition from '@/components/ImageTransition'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/post/${fileName}`
 // const discussUrl = (slug) =>
@@ -80,13 +81,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {authorDetails.map((author) => (
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
-                        <Image
+                        <ImageTransition
                           src={author.avatar}
                           width="50px"
                           height="50px"
                           alt="avatar"
                           quality="80"
-                          className="w-10 h-10 rounded-full"
+                          // className="w-10 h-10 rounded-full"
                         />
                       )}
                       <dl className="text-sm font-medium leading-5 whitespace-nowrap">
