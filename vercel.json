@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/post/2021",
+      "destination": "https://zakiego.com/articles/2021",
+      "statusCode": 301
+    }
+  ]
+}
