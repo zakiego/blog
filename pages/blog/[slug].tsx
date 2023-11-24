@@ -16,9 +16,9 @@ export default function BlogPath({ slug }) {
   return (
     <div>
       Redirect to{' '}
-      <Link href={`/post/${slug}`}>
+      <a href={`/post/${slug}`}>
         <a className="text-blue-500 underline">here</a>
-      </Link>
+      </a>
     </div>
   )
 }

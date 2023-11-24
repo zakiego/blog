@@ -70,12 +70,12 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                       <div className="space-y-5 md:space-y-6">
                         <div>
                           <h2 className="font-bold md:text-2xl">
-                            <Link
+                            <a
                               href={`/post/${slug}`}
                               className="py-1 text-gray-900 dark:text-gray-100 un-effect"
                             >
                               {title}
-                            </Link>
+                            </a>
                           </h2>
                         </div>
                         <div className="text-sm prose text-gray-500 md:text-base max-w-none dark:text-gray-400 line-clamp-2 md:line-clamp-3">
