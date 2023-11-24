@@ -2,8 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/post/*",
-      "destination": "https://zakiego.com/articles/*",
+      "source": "/post/:id",
+      "destination": "https://zakiego.com/articles/:id",
       "statusCode": 301
     }
   ]
